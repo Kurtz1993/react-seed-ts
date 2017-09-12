@@ -4,7 +4,14 @@
   "private": true,
   "description": "",
   "scripts": {
-    "test": "mocha tools/test-setup.js \"src/**/*.tsx\" --watch-extensions ts,tsx"
+    "start": "webpack-dev-server --config ./config/webpack.config.development.js",
+    "copy:html": "node tools/copy-html.js",
+    "test": "mocha tools/test-setup.js \"src/**/*.tsx\" --watch-extensions ts,tsx",
+    "test:watch": "npm run test -- --watch",
+    "lint": "tslint -p .",
+    "prebuild": "rimraf ./dist",
+    "build": "webpack",
+    "postbuild": "npm run copy:html"
   },
   "dependencies": {
     "core-js": "^2.5.1",
