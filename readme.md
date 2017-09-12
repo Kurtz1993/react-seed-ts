@@ -23,7 +23,11 @@ OR
 Then open your browser and go to `http://localhost:4000`.
 
 ## Test
-Basic test configurations with jsdom and enzyme are provided as well as some libraries to help you with your unit testing. To run testing simply type in your console:
+Basic test configurations with jsdom and enzyme are provided as well as some libraries to help you with your unit testing.
+
+Note that every test should be suffixed with `.spec.tsx`, e.g. `MyComponent.spec.tsx`.
+
+To run testing simply type in your console:
 
 `yarn test`
 
