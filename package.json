@@ -8,7 +8,7 @@
     "copy:html": "node tools/copy-html.js",
     "test": "mocha tools/test-setup.js \"src/**/*.tsx\" --watch-extensions ts,tsx",
     "test:watch": "npm run test -- --watch",
-    "lint": "tslint -p .",
+    "lint": "tslint -p tsconfig.json",
     "prebuild": "rimraf ./dist",
     "build": "webpack",
     "postbuild": "npm run copy:html"
