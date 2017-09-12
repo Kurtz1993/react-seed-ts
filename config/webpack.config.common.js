@@ -33,7 +33,9 @@ module.exports = {
         use: [{
           loader: 'tslint-loader',
           options: {
-            configFile: path.resolve(cwd, 'tslint.json')
+            configFile: path.resolve(cwd, 'tslint.json'),
+            tsConfigFile: '../tsconfig.json',
+            typeCheck: true
           }
         }],
         enforce: 'pre'
@@ -97,7 +99,14 @@ module.exports = {
                 }
               }
             },
-            'sass-loader'
+            {
+              loader: 'sass-loader',
+              options: {
+                outputStyle: process.env.NODE_ENV == 'production' ?
+                  'compressed' :
+                  'normal'
+              }
+            }
           ]
         })
       }
