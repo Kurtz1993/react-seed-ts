@@ -118,14 +118,10 @@ module.exports = {
     })
   ],
   resolve: {
-    extensions: ['.js', '.ts', 'tsx'],
+    extensions: ['.js', '.ts', '.tsx'],
     modules: [
       path.resolve(cwd, 'src'),
       path.resolve(cwd, 'node_modules')
     ]
-  },
-  externals: {
-    'react': 'React',
-    'react-dom': 'ReactDOM'
   }
 };
