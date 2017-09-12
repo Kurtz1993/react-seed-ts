@@ -4,7 +4,7 @@
   "private": true,
   "description": "",
   "scripts": {
-    "test": "mocha tools/test-setup.js \"src/**/*.ts\""
+    "test": "mocha tools/test-setup.js \"src/**/*.tsx\" --watch-extensions ts,tsx"
   },
   "dependencies": {
     "core-js": "^2.5.1",
