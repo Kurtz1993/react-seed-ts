@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "experimentalDecorators": true,
     "sourceMap": true,
     "noImplicitAny": true,
@@ -7,13 +8,16 @@
     "module": "commonjs",
     "target": "es5",
     "jsx": "react",
+    "paths": {
+      "*": [
+        "*",
+        "src/*"
+        ]
+    },
     "typeRoots": [
       "./node_modules/@types"
     ]
   },
-  "include": [
-    "./src/**/*"
-  ],
   "exclude": [
     "./node_modules"
   ],
