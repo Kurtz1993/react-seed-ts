@@ -1,0 +1,109 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-react"
+  ],
+  "rules": {
+    "arrow-return-shorthand": {
+      "options": [
+        "multiline"
+      ],
+      "severity": "warn"
+    },
+    "member-access": [
+      true,
+      "no-public"
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": [
+          "public-static-field",
+          "public-static-method",
+          "protected-static-field",
+          "private-static-field",
+          "public-instance-field",
+          "protected-instance-field",
+          "private-instance-field",
+          "public-constructor",
+          "public-instance-method",
+          "protected-instance-method",
+          "private-instance-method"
+        ]
+      }
+    ],
+    "jsdoc-format": true,
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ],
+    "quotemark": {
+      "options": [
+        "single",
+        "jsx-double",
+        "avoid-escape",
+        "avoid-template"
+      ],
+      "severity": "warn"
+    },
+    "no-console": {
+      "severity": "warn"
+    },
+    "no-empty": [
+      true,
+      "allow-empty-catch"
+    ],
+    "prefer-object-spread": {
+      "severity": "warn"
+    },
+    "linebreak-style": [
+      true,
+      "LF"
+    ],
+    "newline-before-return": {
+      "severity": "warn"
+    },
+    "jsx-boolean-value": [
+      true,
+      "always"
+    ],
+    "no-boolean-literal-compare": true,
+    "triple-equals": false,
+    "object-literal-key-quotes": {
+      "options": [
+        "consistent-as-needed"
+      ],
+      "severity": "warn"
+    },
+    "prefer-switch": {
+      "options": [
+        {
+          "min-cases": 3
+        }
+      ],
+      "severity": "warn"
+    },
+    "variable-name": {
+      "options": [
+        "allow-leading-underscore",
+        "ban-keywords"
+      ],
+      "severity": "warn"
+    },
+    "jsx-self-close": true,
+    "jsx-wrap-multiline": true,
+    "jsx-no-string-ref": true,
+    "jsx-key": true,
+    "jsx-equals-spacing": [
+      true,
+      "always"
+    ],
+    "jsx-curly-spacing": [
+      true,
+      "always"
+    ]
+  }
+}
