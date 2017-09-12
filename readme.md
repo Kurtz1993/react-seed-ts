@@ -1,6 +1,6 @@
 # React Seed
 
-This is a personal project providing a seed for starter react projects. It features webpack dev server with SCSS preprocessor, babel decorators and class properties as well as Hot Module Reloading.
+This is a personal project providing a seed for starter react projects. It features webpack dev server with SCSS preprocessor, TypeScript, as well as Hot Module Reloading.
 
 ## Install
 To install dependencies run:
